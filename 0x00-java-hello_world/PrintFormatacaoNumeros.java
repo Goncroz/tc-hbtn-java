@@ -12,7 +12,7 @@ public class PrintFormatacaoNumeros {
         /*NumberFormat nf = NumberFormat.getCurrencyInstance();
         String formatado = nf.format(valor);*/
         
-        System.out.printf("Valor: " + formatado + "2\n" + "Taxa: " + "%.2f\n", taxa);
+        System.out.printf("Valor: " + formatado + "\n" + "Taxa: " + "%.2f%%", taxa);
 
 	}
 
