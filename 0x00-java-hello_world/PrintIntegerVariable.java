@@ -2,9 +2,10 @@
 public class PrintIntegerVariable {
 
 	public static void main(String[] args) {
+		String av = "Avenida AndalÃ³";
 		int numero = 311;
 		
-	System.out.println("Avenida Andaló, " + numero);
+	System.out.println(av + ", " + numero);
 		
 		
 
