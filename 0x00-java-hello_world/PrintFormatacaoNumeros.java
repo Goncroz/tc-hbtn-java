@@ -7,8 +7,8 @@ public class PrintFormatacaoNumeros {
 		float taxa = 0.2456f;
         float valor = 7654.321f;
         
-        Locale enUs = new Locale("pt", "Br");
-        String formatado = NumberFormat.getCurrencyInstance(enUs).format(valor);
+        Locale ptBr = new Locale("pt", "Br");
+        String formatado = NumberFormat.getCurrencyInstance(ptBr).format(valor);
         	
         /*NumberFormat nf = NumberFormat.getCurrencyInstance();
         String formatado = nf.format(valor);*/
