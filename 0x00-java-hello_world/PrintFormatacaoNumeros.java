@@ -9,13 +9,7 @@ public class PrintFormatacaoNumeros {
         
         Locale ptBr = new Locale("pt", "Br");
         String formatado = NumberFormat.getCurrencyInstance(ptBr).format(valor);
-        	
-        /*NumberFormat nf = NumberFormat.getCurrencyInstance();
-        String formatado = nf.format(valor);*/
         
         System.out.printf("Valor: " + formatado + "\n" + "Taxa: " + "%.2f%%\n", taxa);
-        //System.out.println(NumberFormat.getCurrencyInstance().format(valor));
-
 	}
-
 }
