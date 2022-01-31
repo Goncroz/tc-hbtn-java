@@ -1,8 +1,6 @@
-
 public class Program {
-
-	public static void main(String[] args) {
-	    Retangulo retangulo = new Retangulo();
+    public static void main(String[] args) {
+        Retangulo retangulo = new Retangulo();
         retangulo.setLargura(7);
         retangulo.setAltura(4);
 
