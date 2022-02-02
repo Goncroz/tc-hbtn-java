@@ -19,7 +19,7 @@ public class Empregado {
 		System.out.println("Nome: " + nome);
 		System.out.println("Bairro: " + endereco.getBairro());
 		System.out.println("Cidade: " + endereco.getCidade());
-		System.out.println("Pais: " + endereco.getPais());
+		System.out.printf("Pais: " + endereco.getPais());
 	}
 	
 	public String getNome() {
