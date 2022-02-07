@@ -5,14 +5,11 @@ public class InteiroPositivo {
 	private int cont;
 
 	public InteiroPositivo(int valor) {
-		super();
-		this.valor = new Integer(valor);
+		this.valor = valor;
 	}
 	
 	public InteiroPositivo(String valor) {
-		super();
 		this.valor = validaInteiro(Integer.valueOf(valor));
-		//this.valor = new Integer(valor);
 		
 	}
 	
