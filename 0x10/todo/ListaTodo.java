@@ -16,7 +16,7 @@ public class ListaTodo {
 		for(Tarefa tarefa : tarefas) {
 			if(tarefa.getIdentificador() == tarefaRealizada.getIdentificador()){
 				throw new IllegalArgumentException
-				("Tarefa com identificador" + tarefaRealizada.getIdentificador() + "ja existente na lista");				
+				("Tarefa com identificador " + tarefaRealizada.getIdentificador() + " ja existente na lista");				
 			}
 			if(tarefaRealizada.getDescricao().isEmpty() || tarefaRealizada.getDescricao().equals("")) {
 				throw new IllegalArgumentException
