@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Banco {
 	private String nome;
-	List<Agencia> agencias = new ArrayList<>();
+	private List<Agencia> agencias = new ArrayList<>();
 
 	public Banco(String nome) {
 		super();

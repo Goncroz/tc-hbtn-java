@@ -3,12 +3,12 @@ import java.util.List;
 
 public class Cliente {
 	
-	private String nomeDoCliente;
+	private String nome;
 	List<Double> transacoes = new ArrayList<>();
 	
 	public Cliente(String nome, double transacoes) {
 		super();
-		this.nomeDoCliente = nome;
+		this.nome = nome;
 		this.transacoes = new ArrayList<>();
 	}
 
@@ -24,6 +24,6 @@ public class Cliente {
 	}
 
 	public String getNomeDoCliente() {
-		return nomeDoCliente;
+		return nome;
 	}
 }
