@@ -4,7 +4,7 @@ import java.util.List;
 public class Cliente {
 	
 	private String nome;
-	List<Double> transacoes = new ArrayList<>();
+	ArrayList<Double> transacoes = new ArrayList<>();
 	
 	public Cliente(String nome, double transacoes) {
 		super();
