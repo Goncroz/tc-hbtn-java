@@ -17,7 +17,7 @@ public class Agencia {
 		
 	}
 
-	public String getNomeAgencia(String nomeAgencia) {
+	public String getNomeAgencia() {
 		return nomeAgencia;
 	}
 

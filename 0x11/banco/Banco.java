@@ -22,10 +22,10 @@ public class Banco {
 		return agencias;
 	}
 	
-	public Agencia buscarAgencia(String nomeAgencia) {
-		for (Agencia agencia : agencias) {
-			if (agencia.getNomeAgencia(nomeAgencia).equals(nomeAgencia)) {
-				return agencia;
+	public Agencia buscarAgencia(String agenciaNome) {
+		for(int i = 0; i < this.agencias.size(); i++) {
+			if (agencias.get(i).getNomeAgencia().equals(agenciaNome)) {
+				return agencias.get(i);
 			}
 		}
 		return null;
@@ -33,13 +33,25 @@ public class Banco {
 
 	public boolean adicionarAgencia(String nomeDaAgencia) {
 		Agencia adicionandoAgencia = buscarAgencia(nomeDaAgencia);
-		if (adicionandoAgencia == null) {
-			agencias.add(adicionandoAgencia);
-			return true;
+		if (adicionandoAgencia != null) {
+			return false;
 		}
 		Agencia buscandoAgencia = new Agencia(nomeDaAgencia);
-		return false;
+		agencias.add(buscandoAgencia);
+		return true;
 	}
+	
+	/*public boolean adicionarAgencia(String agNova) {
+		Agencia agLocalizada = buscarAgencia(agNova);
+		if (agLocalizada != null) {
+			return false;
+
+		}
+
+		Agencia novaAg = new Agencia(agNova);
+		agencias.add(novaAg);
+		return true;
+	}*/
 
 	public boolean adicionarCliente(String nomeDaAgencia, String nomeDoCliente, double valorDaTransacaoInicial) {
 		Agencia adicionandoCliente = buscarAgencia(nomeDaAgencia);
