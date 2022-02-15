@@ -1,7 +1,4 @@
-import atividades.CarregarVideo;
-import atividades.CodificarVideo;
-import atividades.EnviarEmail;
-import atividades.ModificarStatusVideo;
+import atividades.*;
 
 public class Program {
 	public static void main(String[] args) {
