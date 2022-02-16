@@ -16,7 +16,7 @@ public class Sedex implements ProvedorFrete {
 			valorFrete = valor * 0.05;
 		}
 		
-		return new Frete(valorFrete, TipoProvedorFrete.SEDEX);
+		return new Frete(valorFrete, obterTipoProvedorFrete());
 	}
 	
 	public TipoProvedorFrete obterTipoProvedorFrete() {

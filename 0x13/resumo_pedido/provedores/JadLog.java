@@ -16,7 +16,7 @@ public class JadLog implements ProvedorFrete {
 			valorFrete = valor* 0.045;
 		}
 		
-		return new Frete(valorFrete, TipoProvedorFrete.JADLOG);
+		return new Frete(valorFrete, obterTipoProvedorFrete());
 	}
 	
 	public TipoProvedorFrete obterTipoProvedorFrete() {
