@@ -32,7 +32,7 @@ public class Telefone {
 
 	@Override
 	public String toString() {
-		return "(" + this.codigoArea + ")" + this.numero;
+		return "(" + this.codigoArea + ") " + this.numero;
 	}
 	
 	
