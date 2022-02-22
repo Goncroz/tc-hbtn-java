@@ -9,7 +9,7 @@ import java.util.TreeSet;
 
 public class Blog {
 	
-	List<Post> posts;
+	private List<Post> posts;
 
 	public Blog() {
 		posts = new ArrayList<>();
