@@ -7,24 +7,24 @@ public class ListaTelefonica {
 	
 	private HashMap<String, ArrayList<Telefone>> listaTelefones;
 	
-	
-	public ListaTelefonica(HashMap<String, ArrayList<Telefone>> listaTelefones) {
-		super();
-		this.listaTelefones = listaTelefones;
-	}
 	public ListaTelefonica() {
-		super();
-		listaTelefones = new HashMap<>();
-	}	
+		this.listaTelefones = new HashMap<>();
+	}
+
 	public void adicionarTelefone(String nome, Telefone fone) {
-		if(listaTelefones.containsKey(nome)) {
-			listaTelefones.get(nome).add(fone);			
+		
+		ArrayList<Telefone> telefones = new ArrayList<>();
+		telefones = listaTelefones.get(nome);
+		
+		if(telefones == null) {
+			telefones = new ArrayList<>();
+			telefones.add(fone);
+			listaTelefones.put(nome, telefones);
 		}
 		else {
-			ArrayList<Telefone> info = new ArrayList<Telefone>();
-			info.add(fone);
-			listaTelefones.put(nome, info);
-		}	
+			telefones.add(fone);
+		}
+				
 	}
 	public ArrayList<Telefone> buscar(String nome) {		
 		return listaTelefones.get(nome);

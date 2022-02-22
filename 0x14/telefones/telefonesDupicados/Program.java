@@ -1,10 +1,12 @@
+
 import java.util.ArrayList;
+import java.util.Set;
 
 
 public class Program {
 
     public static void main(String[] args) {
-        Telefone telefone1 = new Telefone("11", "9888-5551");
+    	Telefone telefone1 = new Telefone("11", "9888-5551");
         Telefone telefone2 = new Telefone("17", "99602-6725");
         Telefone telefone3 = new Telefone("21", "9882-1514");
         Telefone telefone4 = new Telefone("13", "8771-2344");
@@ -12,6 +14,8 @@ public class Program {
         Telefone telefone6 = new Telefone("17", "3444-1112");
         Telefone telefone7 = new Telefone("17", "3311-1566");
 
+        Telefone telefoneDuplicado1 = new Telefone("11", "9888-5551");
+        Telefone telefoneDuplicado2 = new Telefone("17", "3444-1112");
 
         ListaTelefonica listaTelefonica1 = new ListaTelefonica();
         listaTelefonica1.adicionarTelefone("Pedro Alvaro", telefone1);
@@ -22,28 +26,40 @@ public class Program {
         listaTelefonica1.adicionarTelefone("Carlos Alberto", telefone4);
         listaTelefonica1.adicionarTelefone("Carlos Alberto", telefone6);
 
-        ArrayList<Telefone> telefones1 = listaTelefonica1.buscar("Pedro Alvaro");
+        try {
+            listaTelefonica1.adicionarTelefone("Pedro Alvaro", telefoneDuplicado1);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        try {
+            listaTelefonica1.adicionarTelefone("Pedro Alvaro", telefoneDuplicado2);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        Set<Telefone> telefones1 = listaTelefonica1.buscar("Pedro Alvaro");
         if (telefones1 == null)
             System.out.println("Telefones na encontrados");
-        else
+        else 
             System.out.println(telefones1);
 
-        ArrayList<Telefone> telefones2 = listaTelefonica1.buscar("Maria Joaquina");
+        Set<Telefone> telefones2 = listaTelefonica1.buscar("Maria Joaquina");
         if (telefones2 == null)
             System.out.println("Telefones na encontrados");
-        else
+        else   
             System.out.println(telefones2);
 
-        ArrayList<Telefone> telefones3 = listaTelefonica1.buscar("Carlos Alberto");
+        Set<Telefone> telefones3 = listaTelefonica1.buscar("Carlos Alberto");
         if (telefones3 == null)
             System.out.println("Telefones na encontrados");
-        else
+        else 
             System.out.println(telefones3);
 
-        ArrayList<Telefone> telefones4 = listaTelefonica1.buscar("Jose Oliveira");
+        Set<Telefone> telefones4 = listaTelefonica1.buscar("Jose Oliveira");
         if (telefones4 == null)
             System.out.println("Telefones na encontrados");
-        else
+        else 
             System.out.println(telefones4);
     }
 }
