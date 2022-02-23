@@ -2,6 +2,6 @@
 
 @FunctionalInterface
 public interface CalculadorDeSalario {
-	public abstract Double calcular(Double sal);
+	public abstract double calcular(double sal);
 
 }
