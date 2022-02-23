@@ -11,7 +11,7 @@ public class Produto {
 
 	Supplier<Double> precoComMarkUp = () -> preco * (1 + percentualMarkup);
 
-	Consumer<Double> atualizarMarkUp = preco -> percentualMarkup = preco / 100;
+	Consumer<Double> atualizarMarkUp = valor -> percentualMarkup = valor / 100;
 
 	public Produto(Double preco, String nome) {
 		this.nome = nome;
