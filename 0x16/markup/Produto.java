@@ -5,9 +5,9 @@ import java.util.function.Supplier;
 
 public class Produto {
 
-	private String nome;
-	private Double preco;
-	private Double percentualMarkup = 0.1;
+	String nome;
+	Double preco;
+	Double percentualMarkup = 0.1;
 
 	Supplier<Double> precoComMarkUp = () -> preco * (1 + percentualMarkup);
 
