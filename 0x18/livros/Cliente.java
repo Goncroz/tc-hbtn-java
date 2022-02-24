@@ -2,12 +2,12 @@
 
 public class Cliente {
 	
-	private Integer codigo;
+	private int codigo;
 	private String nome;
 	private boolean premium;
 	
 	
-	public Cliente(Integer codigo, String nome, boolean premium) {
+	public Cliente(int codigo, String nome, boolean premium) {
 		super();
 		this.codigo = codigo;
 		this.nome = nome;
@@ -15,12 +15,12 @@ public class Cliente {
 	}
 
 
-	public Integer getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
 
 
-	public void setCodigo(Integer codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 

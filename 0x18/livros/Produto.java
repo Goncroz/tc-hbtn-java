@@ -1,12 +1,12 @@
 
 public class Produto {
 	
-	private Integer codigo;
+	private int codigo;
 	private String nome;
 	private CategoriaProduto categoria;
 	private double preco;
 	
-	public Produto(Integer codigo, String nome, CategoriaProduto categoria, double preco) {
+	public Produto(int codigo, String nome, CategoriaProduto categoria, double preco) {
 		this.codigo = codigo;
 		this.nome = nome;
 		this.categoria = categoria;
@@ -17,11 +17,11 @@ public class Produto {
 	
 	
 
-	public Integer getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(Integer codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 

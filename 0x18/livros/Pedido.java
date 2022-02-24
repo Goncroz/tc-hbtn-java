@@ -5,22 +5,22 @@ import java.util.List;
 
 public class Pedido {
 	
-	private Integer codigo;
+	private int codigo;
 	private List<Produto> produtos;
 	private Cliente cliente;
 	
-	public Pedido(Integer codigo, List<Produto> produtos, Cliente cliente) {
+	public Pedido(int codigo, List<Produto> produtos, Cliente cliente) {
 		super();
 		this.codigo = codigo;
 		this.produtos = new ArrayList<Produto>(produtos);
 		this.cliente = cliente;
 	}
 
-	public Integer getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(Integer codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 
