@@ -1,13 +1,10 @@
 
 
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 public class Consulta {
 
@@ -33,7 +30,7 @@ public class Consulta {
 
 	public static List<Pedido> obterPedidosComEletronicos(List<Pedido> pedido) {
 		
-		List<Pedido> pedidosEletronicos = new ArrayList<>(pedido);
+		List<Pedido> pedidosEletronicos = new ArrayList<Pedido>(pedido);
 		
 	 return pedidosEletronicos.stream()
 				.filter(t -> t.getProdutos().stream()
