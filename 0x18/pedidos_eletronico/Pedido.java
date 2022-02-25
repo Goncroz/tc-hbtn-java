@@ -42,7 +42,7 @@ public class Pedido {
 
 	@Override
 	public String toString() {
-		return "[" + codigo + "]" + cliente.getNome();
+		return "[" + codigo + "] " + cliente.getNome();
 	}
 	
 	
