@@ -37,4 +37,15 @@ public class Consulta {
 						.anyMatch(p -> p.getCategoria() == CategoriaProduto.ELETRONICO)).collect(Collectors.toList());
 	}
 
+	public static List<Produto> aplicar15PorcentoDescontoEletronicos(List<Produto> produtos) {
+		
+		 return produtos.stream()
+	                .map(produto ->
+	                {
+	                    if (produto.getCategoria().equals(CategoriaProduto.ELETRONICO))
+	                        produto.setPreco(produto.getPreco() - produto.getPreco() * 0.15);
+	                    return produto;
+	                }).collect(Collectors.toList());
+	}
+
 }
