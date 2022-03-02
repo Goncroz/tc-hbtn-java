@@ -28,7 +28,7 @@ public class ConsultaPessoas {
 		
 		 Map<String, List<Pessoa>> findByQuarentaMais = todasPessoas.stream()
 				.collect(Collectors.groupingBy(
-						Pessoa::getCargo, Collectors.filtering(p -> p.equals(p), Collectors.toList())));
+						Pessoa::getCargo, Collectors.filtering(p -> p.getIdade() >= 40, Collectors.toList())));
 		
 		 return findByQuarentaMais;
 	}
