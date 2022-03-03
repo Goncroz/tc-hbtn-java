@@ -1,5 +1,4 @@
 
-
 public class Eletronico {
 	
 	private String descricao;
