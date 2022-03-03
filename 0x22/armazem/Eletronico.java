@@ -32,7 +32,7 @@ public class Eletronico {
 
 	@Override
 	public String toString() {
-		return "[" + descricao + "] R$ " + String.format("%f ", valor);
+		return "[" + descricao + "] R$ " + String.format("%f", valor);
 	}
 	
 	
