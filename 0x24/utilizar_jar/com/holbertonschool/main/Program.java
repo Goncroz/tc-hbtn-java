@@ -14,6 +14,6 @@ public class Program {
         System.out.println(multiplicacao);
 
         int subtracao = Aritmeticos.subtrair(2, 3);
-        System.out.println(subtracao);        
+        System.out.println(subtracao);      
     }
 }
