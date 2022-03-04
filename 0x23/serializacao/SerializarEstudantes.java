@@ -52,6 +52,7 @@ public class SerializarEstudantes<T> {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Estudante> desserializar() {
 		List<Estudante> estudantes = null;
 		FileInputStream fis = null;
